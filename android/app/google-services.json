@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "670284790176",
+    "project_id": "hopeshore-20d85",
+    "storage_bucket": "hopeshore-20d85.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:670284790176:android:019bc143bc12080712ccc5",
+        "android_client_info": {
+          "package_name": "com.jr.framguard"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMXFZPZEy6F7xPEWa3NLVN8by1_OOxUW4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
