@@ -4,7 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import '../utils/color.dart';
 import '../utils/image.dart';
 import 'main_screen/dashboard.dart';
-import 'main_screen/owner_profile_screen.dart';
+// import 'main_screen/owner_profile_screen.dart';
 import 'main_screen/pet_list_screen.dart';
 
 final Color inActiveIconColor = AppColor.kGrayscale40;
@@ -31,7 +31,7 @@ class _CustomNavBarCurvedState extends State<CustomNavBarCurved> {
     super.dispose();
   }
 
-  final pages = [Dashboard(), PetListScreen(), ];
+  final pages = [Dashboard(), PetListScreen()];
   // OwnerProfileScreen()
 
   @override
@@ -39,53 +39,25 @@ class _CustomNavBarCurvedState extends State<CustomNavBarCurved> {
     return Scaffold(
       body: pages[currentSelectedIndex],
       bottomNavigationBar: BottomNavigationBar(
-        onTap: updateCurrentIndex,
-        currentIndex: currentSelectedIndex,
-        showSelectedLabels: true,
-        showUnselectedLabels: true,
+        currentIndex: 0, // Set to 'Home'
         type: BottomNavigationBarType.fixed,
-        items: [
+        selectedItemColor: const Color(0xFF22C55E), // green-500
+        unselectedItemColor: const Color(0xFF64748B), // slate-500
+        selectedFontSize: 12,
+        unselectedFontSize: 12,
+        items: const [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              Svgpath
-                  .kdashboard, // Replace with the correct path to your SVG file
-              colorFilter: ColorFilter.mode(inActiveIconColor, BlendMode.srcIn),
-              height: 27,
-            ),
-            activeIcon: SvgPicture.asset(
-              Svgpath
-                  .kdashboard, // Replace with the correct path to your SVG file
-              colorFilter: ColorFilter.mode(AppColor.kPrimary, BlendMode.srcIn),
-              height: 27,
-            ),
-
-            label: "Home",
+            icon: Icon(Icons.assignment_turned_in_outlined),
+            label: 'Certificates',
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              Svgpath.kpet,
-              colorFilter: ColorFilter.mode(inActiveIconColor, BlendMode.srcIn),
-              height: 27,
-            ),
-            activeIcon: SvgPicture.asset(
-              Svgpath.kpet,
-              colorFilter: ColorFilter.mode(AppColor.kPrimary, BlendMode.srcIn),
-              height: 27,
-            ),
-            label: "Pets",
+            icon: Icon(Icons.storefront_outlined),
+            label: 'Market',
           ),
           BottomNavigationBarItem(
-            icon: SvgPicture.asset(
-              Svgpath.kprofile,
-              colorFilter: ColorFilter.mode(inActiveIconColor, BlendMode.srcIn),
-              height: 27,
-            ),
-            activeIcon: SvgPicture.asset(
-              Svgpath.kprofile,
-              colorFilter: ColorFilter.mode(AppColor.kPrimary, BlendMode.srcIn),
-              height: 27,
-            ),
-            label: "Profile",
+            icon: Icon(Icons.health_and_safety_outlined),
+            label: 'Advisor',
           ),
         ],
       ),
