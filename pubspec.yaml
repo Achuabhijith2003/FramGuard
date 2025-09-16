@@ -48,6 +48,8 @@ dependencies:
   google_fonts: ^6.2.1
   flutter_svg: ^2.1.0
   internet_connection_checker_plus: ^2.7.2
+  flutter_datetime_picker_plus: ^2.2.0
+  animate_do: ^4.2.0
 
 dev_dependencies:
   flutter_test:

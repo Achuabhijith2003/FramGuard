@@ -173,31 +173,31 @@ Widget _buildRecentActivitiesList() {
   );
 }
 
-Widget _buildBottomNavigationBar() {
-  return BottomNavigationBar(
-    currentIndex: 0, // Set to 'Home'
-    type: BottomNavigationBarType.fixed,
-    selectedItemColor: const Color(0xFF22C55E), // green-500
-    unselectedItemColor: const Color(0xFF64748B), // slate-500
-    selectedFontSize: 12,
-    unselectedFontSize: 12,
-    items: const [
-      BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
-      BottomNavigationBarItem(
-        icon: Icon(Icons.assignment_turned_in_outlined),
-        label: 'Certificates',
-      ),
-      BottomNavigationBarItem(
-        icon: Icon(Icons.storefront_outlined),
-        label: 'Market',
-      ),
-      BottomNavigationBarItem(
-        icon: Icon(Icons.health_and_safety_outlined),
-        label: 'Advisor',
-      ),
-    ],
-  );
-}
+// Widget _buildBottomNavigationBar() {
+//   return BottomNavigationBar(
+//     currentIndex: 0, // Set to 'Home'
+//     type: BottomNavigationBarType.fixed,
+//     selectedItemColor: const Color(0xFF22C55E), // green-500
+//     unselectedItemColor: const Color(0xFF64748B), // slate-500
+//     selectedFontSize: 12,
+//     unselectedFontSize: 12,
+//     items: const [
+//       BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+//       BottomNavigationBarItem(
+//         icon: Icon(Icons.assignment_turned_in_outlined),
+//         label: 'Certificates',
+//       ),
+//       BottomNavigationBarItem(
+//         icon: Icon(Icons.storefront_outlined),
+//         label: 'Market',
+//       ),
+//       BottomNavigationBarItem(
+//         icon: Icon(Icons.health_and_safety_outlined),
+//         label: 'Advisor',
+//       ),
+//     ],
+//   );
+// }
 
 /// A reusable widget for the main action buttons.
 class _ActionCard extends StatelessWidget {

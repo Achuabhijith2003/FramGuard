@@ -1,3 +1,5 @@
+import 'package:farmguard/screens/Seller/Seller_home.dart';
+import 'package:farmguard/screens/Seller/seller_remaster_home.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter_svg/flutter_svg.dart';
 
@@ -31,7 +33,7 @@ class _CustomNavBarCurvedState extends State<CustomNavBarCurved> {
     super.dispose();
   }
 
-  final pages = [Dashboard(), CertificatesScreen()];
+  final pages = [Dashboard(), CertificatesScreen(), SellerRemasterHome()];
   // OwnerProfileScreen()
 
   @override
